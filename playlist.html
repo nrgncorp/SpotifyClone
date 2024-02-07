@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Spotify</title>
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/EDS-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="preload" href="CircularSpotifyText-Light.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body> 
+    <div class="container">
+        <div id="nav-bar" class="nav-bar-colors">
+            <div id="nav-bar-row1" class="nav-bar-row-colors">
+                <ul>
+                    <li>
+                        <a href="" class="nav-bar-row-colors">
+                            <svg role="img" height="24" width="24" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq home-icon" viewBox="0 0 24 24" data-encore-id="icon"><path d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"></path></svg>
+                            <p>
+                                Ana sayfa
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-bar-row-colors">
+                            <svg role="img" height="24" width="24" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq search-icon" viewBox="0 0 24 24" data-encore-id="icon"><path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path></svg>
+                            <p>
+                                Ara
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav-bar-row2" class="nav-bar-row-colors">
+                <ul>
+                    <li>
+                        <a href="" class="nav-bar-row-colors">
+                            <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg>
+                            <p>
+                                Kitaplığın
+                            </p>
+                        </a>
+                    </li>
+                    <div class="nav-bar-row2-buttons">
+                        <button class="nav-bar-row2-button1">
+                            <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"></path></svg>
+                        </button>
+                        <button class="nav-bar-row2-button2">
+                            <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 leya-dW"><path d="M7.19 1A.749.749 0 0 1 8.47.47L16 7.99l-7.53 7.521a.75.75 0 0 1-1.234-.815.75.75 0 0 1 .174-.243l5.72-5.714H.75a.75.75 0 1 1 0-1.498h12.38L7.41 1.529a.749.749 0 0 1-.22-.53z"></path></svg>
+                        </button>
+                    </div>
+                </ul>
+                <div class="type-select-buttons">
+                    <button class="type-select-buttons1 type-select-buttons-colors bt1margin">
+                        Çalma listeleri
+                    </button>
+                    <button class="type-select-buttons2 type-select-buttons-colors">
+                        Sanatçılar
+                    </button>
+                    <button class="type-select-buttons2 type-select-buttons-colors bt3margin" >
+                        Albümler
+                    </button>
+                </div>
+                <div class="library">
+                    <div class="search-and-sort search-and-sort-colors">
+                        <button class="search-list">
+                            <svg role="img" height="16" width="16" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq CIVozJ8XNPJ60uMN23Yg" viewBox="0 0 16 16" data-encore-id="icon"><path d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"></path></svg>
+                        </button>
+                        <div class="search-sort-between-space">
+                            <br>
+                        </div>
+                        <button class="sort-list">
+                            <span class="ldf1160">Yakın tarihli</span>
+                            <svg role="img" height="16" width="16" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq SbDHY3fVADNJ4l9qOLQ2" viewBox="0 0 16 16" data-encore-id="icon"><path d="m14 6-6 6-6-6h12z"></path></svg>
+                        </button>
+                    </div>
+                    <div id="playlist-list">
+                        <div class="playlist-list-item">
+                            <img src="assets/images/playlist-tumbnails/begenilen.jpg" alt="">
+                            <div class="playlist-list-item-spans">
+                                <span class="playlist-list-item-spn1 makegreen">Beğenilen Şarkılar</span>
+                                <div style="float: none; width: 100%;">
+                                    <span class="playlist-list-item-spn2 makegray">Çalma listesi &nbsp;•&nbsp; NRGN</span>
+                                </div>
+                            </div>
+                            <svg role="img" height="16" width="16" aria-hidden="true" class="Svg-sc-ytk21e-0 ilPTuf o_wMyH9_LbAmIwlVqsF0" viewBox="0 0 16 16" data-encore-id="icon"><path d="M10.016 1.125A.75.75 0 0 0 8.99.85l-6.925 4a3.639 3.639 0 0 0 0 6.299l6.925 4a.75.75 0 0 0 1.125-.65v-13a.75.75 0 0 0-.1-.375zM11.5 5.56a2.75 2.75 0 0 1 0 4.88V5.56z"></path><path d="M16 8a5.752 5.752 0 0 1-4.5 5.614v-1.55a4.252 4.252 0 0 0 0-8.127v-1.55A5.752 5.752 0 0 1 16 8z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-stage" class="main-stage-colors">
+            <div class="main-stage-header">
+                <div class="main-stage-header-buttons">
+                    <button class="main-stage-header-button1" title="Geri git">
+                        <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 12 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq">
+                            <path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path></svg>
+                    </button>
+                    <button class="main-stage-header-button2" title="İleri git">
+                        <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 12 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 leya-dW">
+                            <path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path></svg>
+                    </button>
+                </div>
+                <div class="main-stage-header-button-beetwen">
+                    <br>
+                </div>
+                <div class="main-stage-header-buttons">
+                    <button class="main-stage-header-button1" title="Geri git">
+                        <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 12 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq">
+                            <path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path>
+                        </svg>
+                    </button>
+                    <button class="main-stage-header-button2" title="İleri git">
+                        <img src="https://i.scdn.co/image/ab67757000003b82aa9a31b593ffb3e535760a5b" alt="NRGN">
+                    </button>
+                </div>
+   
+            </div>
+            <div class="main-stage-main">
+                <div class="main-stage-last-playlists">
+                    <h2 id="dayAndNight" class="main-stage-playlist-header">
+                        İyi Akşamlar
+                    </h2>
+                    <div id="main-stage-last-playlists-playlist">
+                        
+                    </div>
+                </div>
+                <div id="spclplylistgnrtr" class="main-stage-special-playlists">
+
+                </div>
+                <div id="spclplylistgnrtr2" class="main-stage-special-playlists">
+
+                </div>
+            </div>
+        </div>
+        <div id="right-bar">
+            <div id="right-bar-header">
+                <h4 class="right-bar-header-h4">
+                    Arkadaş Etkinliği
+                </h4>
+                <div class="right-bar-header-between">
+                    <br>
+                </div>
+                <button class="right-bar-header-button">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU">
+                        <path d="M2.47 2.47a.75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div id="friends-activity-main">
+                
+            </div>
+
+        </div>
+        <div id="music-controller">
+            <div class="music-controller-info">
+                <div class="music-controller-info-tumbnail">
+                    <img src="assets/images/music-tumbnails/Master_of_Puppets.jpg">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M.47 11.03a.75.75 0 0 0 1.06 0L8 4.56l6.47 6.47a.75.75 0 1 0 1.06-1.06L8 2.44.47 9.97a.75.75 0 0 0 0 1.06z"></path></svg>
+                </div>
+                <div class="music-controller-info-texts">
+                    <p>
+                        <strong>Master Of Puppets</strong><br>
+                        <span>Metallica</span>
+                    </p>
+                </div>
+                <div class="music-controller-info-buttons">
+                    <button class="button-like" id="buttonlike" onclick="begenmeButonu()">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="svg1" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"></path></svg>
+                    </button>
+                </div>
+                <div class="music-controller-info-between">
+                    <br>
+                </div>
+            </div>
+            <div class="music-controller-player">
+                <div class="music-controller-player-buttons">
+                    <div class="music-controller-player-buttons-between">
+                        <br>
+                    </div>
+                    <div class="music-controller-player-buttons-zone">
+                        <button class="music-controller-player-buttons-zone-button-typ1" id="mixButton">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU klm1"><path d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z"></path><path d="m7.5 10.723.98-1.167.957 1.14a2.25 2.25 0 0 0 1.724.804h1.947l-1.017-1.018a.75.75 0 1 1 1.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 1 1-1.06-1.06L13.109 13H11.16a3.75 3.75 0 0 1-2.873-1.34l-.787-.938z"></path></svg>
+                        </button>
+                        <button class="music-controller-player-buttons-zone-button-typ1">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU klm1"><path d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z"></path></svg>
+                        </button>
+                        <button class="music-controller-player-buttons-zone-button-typ2" id="playButton">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU"><path d="M2.7 1a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7H2.7zm8 0a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
+                        </button>
+                        <button class="music-controller-player-buttons-zone-button-typ1">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kPpCsU klm1"><path d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z"></path></svg>
+                        </button>
+                        <button class="music-controller-player-buttons-zone-button-typ1" id="replayButton">
+                            <svg id="replayButtonColor" class="Svg-sc-ytk21e-3 klm1" role="img" aria-hidden="true" viewBox="0 0 16 16">
+                                <path d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="music-controller-player-buttons-between">
+                        <br>
+                    </div>
+                </div>
+                <div class="music-controller-player-navigation-area">
+                    <div class="music-controller-player-navigation-between">
+                        <br>
+                    </div>
+                    <div class="music-controller-player-navigation">
+                        <p id="music-controller-player-navigation-start-time">
+                            0:00
+                        </p>
+                        <div class="slider-container music-controller-player-navigation-range">
+                            <span class="bar">
+                                <span class="fill"></span>
+                            </span>
+                            <input id="slider" class="slider" type="range" min="0" max="100" value="0">
+                        </div>
+                        <p id="music-controller-player-navigation-end-time">
+                            0:00    
+                        </p>
+                    </div>
+                    <div class="music-controller-player-navigation-between">
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="music-controller-settings">
+                <div class="music-controller-settings-between">
+                    <br>
+                </div>
+                <div class="music-controller-settings-buttons">
+                    <button class="music-controller-settings-button" id="nowPlay">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-3 settingButtonHover kPpCsU"><path d="M11.196 8 6 5v6l5.196-3z"></path><path d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z"></path></svg>
+                    </button>
+                    <button class="music-controller-settings-button" id="lyricButton">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-3 settingButtonHover kPpCsU"><path d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797zM10.5 8.118l-2.619-2.62A63303.13 63303.13 0 0 0 4.74 9.075L2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045 3.505-3.99z"></path></svg>
+                    </button>
+                    <button class="music-controller-settings-button" id="queeButton">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-3 settingButtonHover kPpCsU"><path d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z"></path></svg>
+                    </button>
+                    <button class="music-controller-settings-button" id="connectButton">
+                        <svg data-encore-id="icon" role="presentation" aria-hidden="true" class="Svg-sc-ytk21e-3 settingButtonHover kPpCsU" viewBox="0 0 16 16"><path d="M2 3.75C2 2.784 2.784 2 3.75 2h8.5c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0 1 12.25 12h-8.5A1.75 1.75 0 0 1 2 10.25v-6.5zm1.75-.25a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-6.5a.25.25 0 0 0-.25-.25h-8.5zM.25 15.25A.75.75 0 0 1 1 14.5h14a.75.75 0 0 1 0 1.5H1a.75.75 0 0 1-.75-.75z"></path></svg>
+                    </button>
+                    <div class="music-controller-settings-volume">
+                        <button>
+                            <svg data-encore-id="icon" role="presentation" aria-label="Ses seviyesi yüksek" aria-hidden="true" id="volume-icon" viewBox="0 0 16 16" class="Svg-sc-ytk21e-3 settingButtonHover dAOlPY"><path d="M9.741.85a.75.75 0 0 1 .375.65v13a.75.75 0 0 1-1.125.65l-6.925-4a3.642 3.642 0 0 1-1.33-4.967 3.639 3.639 0 0 1 1.33-1.332l6.925-4a.75.75 0 0 1 .75 0zm-6.924 5.3a2.139 2.139 0 0 0 0 3.7l5.8 3.35V2.8l-5.8 3.35zm8.683 4.29V5.56a2.75 2.75 0 0 1 0 4.88z"></path><path d="M11.5 13.614a5.752 5.752 0 0 0 0-11.228v1.55a4.252 4.252 0 0 1 0 8.127v1.55z"></path></svg>
+                        </button>
+                        <div class="slider-container2 music-controller-player-navigation-range2">
+                            <span class="bar2">
+                                <span class="fill2"></span>
+                            </span>
+                            <input id="slider" class="slider2" type="range" min="0" max="100" value="100">
+                        </div>
+                    </div>
+                    <button class="music-controller-settings-button" id="fullScreenButton">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-3 settingButtonHover kPpCsU"><path d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script  src="./script.js">
+    </script>
+    <script  src="./likebutton.js">
+    </script>
+    <script  src="./playerbuttons.js">
+    </script>
+    <script  src="./range.js">
+    </script>
+</html>
